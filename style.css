@@ -1,0 +1,50 @@
+
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+
+  50%  { transform: translateY(-10px); }
+
+  100% { transform: translateY(0); }
+}
+
+
+h2:nth-child(n) {
+	/*Your code should go under this comment*/  animation: bounce 1s infinite;
+}
+
+h2:nth-child(n):hover {
+	/*Your code should go under this comment*/  animation: bounce2 1s infinite;
+}
+
+
+@keyframes bounce2 {
+  0%   { transform: translateX(0); }
+
+  50%  { transform: translateX(-10px); color:red; }
+
+  100% { transform: translateX(0); }
+}
+
+
+
+przykładowy element {
+	/*Your code should go under this comment*/  background: linear-gradient(
+  135deg,
+  #667eea,
+  #764ba2,
+  #6b8dd6
+);
+}
+
+.start-1\/2:before {
+	/*Your code should go under this comment*/  width:100px;
+  height:100px;
+  background-color:red;
+  content: "";
+  position: absolute;   /* NIE wpływa na layout */
+  inset: 0;             /* top:0; right:0; bottom:0; left:0 */
+  background-color: red;
+  z-index: -200;          /* 👈 ZA elementem */
+}
+
